@@ -5,7 +5,7 @@ import org.springframework.batch.item.ItemProcessor;
 
 import java.time.LocalDate;
 
-public class BatchProcessor  implements ItemProcessor<MatchInput, Match> {
+public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
     @Override
     public Match process(final MatchInput matchInput) throws Exception {
@@ -25,7 +25,7 @@ public class BatchProcessor  implements ItemProcessor<MatchInput, Match> {
                 .id(Long.parseLong(matchInput.getId()))
                 .city(matchInput.getCity())
                 .date(LocalDate.parse(matchInput.getDate()))
-                .playerOfmatch(matchInput.getPlayer_of_match())
+                .playerOfMatch(matchInput.getPlayer_of_match())
                 .venue(matchInput.getVenue())
                 .team1(firstInningsTeam)
                 .team2(secondInningsTeam)
