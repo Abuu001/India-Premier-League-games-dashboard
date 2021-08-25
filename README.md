@@ -1,7 +1,9 @@
 # India-Premier-League-games-dashboard
 
 This project is built using :
+
 i) Frontend - React Js
+
 ii) Backend - Springboot
 
 Browse your favorite India Premier League teams and access their past games details, wins and losses ratios - accessible by team and tournament year.
