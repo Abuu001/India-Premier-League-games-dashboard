@@ -5,17 +5,22 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Entity
 public class Match {
+
+    @Id
     private Long id;
     private String city;
     private LocalDate date;
-    private String playerOfmatch;
+    private String playerOfMatch;
     private String venue;
     private String team1;
     private String team2;
