@@ -61,7 +61,7 @@ public class BatchConfig {
                 .delimited()
                 .names(FIELD_NAMES)
                 .fieldSetMapper(new BeanWrapperFieldSetMapper<MatchInput>() {{
-                    setTargetType(MatchInput.class);
+                     setTargetType(MatchInput.class);
                 }})
                 .build();
     }
