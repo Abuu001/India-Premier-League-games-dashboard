@@ -1,6 +1,5 @@
 package io.lugonzo.ipldashboard.data;
 
-import ch.qos.logback.core.joran.spi.NoAutoStart;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,7 +18,7 @@ public class MatchInput {
     private String team2;
     private String toss_winner;
     private String toss_decision;
-    private String match_winner;
+    private String winner;
     private String result;
     private String result_margin;
     private String eliminator;
