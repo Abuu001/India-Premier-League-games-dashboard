@@ -1,22 +1,27 @@
 package io.lugonzo.ipldashboard.data;
 
 import io.lugonzo.ipldashboard.entity.Match;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 
 import java.time.LocalDate;
 
 public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
+    private static final Logger log = LoggerFactory.getLogger(MatchDataProcessor.class);
+
     @Override
     public Match process(final MatchInput matchInput) throws Exception {
 
-        //set team 1 and team2 on the Innings order
-        String firstInningsTeam,secondInningsTeam;
+        // Set Team 1 and Team 2 depending on the innings order
+        String firstInningsTeam, secondInningsTeam;
 
-        if("bat".equals(matchInput.getToss_decision())){
+        if ("bat".equals(matchInput.getToss_decision())) {
             firstInningsTeam = matchInput.getToss_winner();
-            secondInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1()) ? matchInput.getTeam2() : matchInput.getTeam1();
-        }else{
+            secondInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1())  ? matchInput.getTeam2() : matchInput.getTeam1();
+
+        } else {
             secondInningsTeam = matchInput.getToss_winner();
             firstInningsTeam = matchInput.getToss_winner().equals(matchInput.getTeam1()) ? matchInput.getTeam2() : matchInput.getTeam1();
         }
@@ -31,12 +36,12 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
                 .team2(secondInningsTeam)
                 .tossWinner(matchInput.getToss_winner())
                 .tossDecision(matchInput.getToss_decision())
+                .matchWinner(matchInput.getWinner())
                 .result(matchInput.getResult())
                 .resultMargin(matchInput.getResult_margin())
                 .umpire1(matchInput.getUmpire1())
                 .umpire2(matchInput.getUmpire2())
                 .build();
-
 
         return match;
     }
