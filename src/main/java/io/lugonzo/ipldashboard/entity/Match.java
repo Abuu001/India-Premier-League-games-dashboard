@@ -9,15 +9,15 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.time.LocalDate;
 
+@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity
 public class Match {
 
     @Id
-    private Long id;
+    private long id;
     private String city;
     private LocalDate date;
     private String playerOfMatch;
@@ -31,4 +31,6 @@ public class Match {
     private String resultMargin;
     private String umpire1;
     private String umpire2;
+
+
 }
