@@ -20,7 +20,7 @@ public class Team {
     private long totalMatches;
     private long totalWins;
 
-    @Transient
+    @Transient  //dont add to database
     private List<Match> matches;
 
     public Team(String teamName, long totalMatches) {
