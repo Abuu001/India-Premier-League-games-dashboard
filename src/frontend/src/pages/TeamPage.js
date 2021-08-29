@@ -1,9 +1,9 @@
 import {React , useEffect,useState} from 'react'
+import {useParams} from "react-router-dom"
 import MatchDetailCard from '../components/MatchDetailCard'
 import MatchSmallCard from '../components/MatchSmallCard'
 import "./TeamPage.css";
 import axios from "axios"
-import {useParams} from "react-router-dom"
 
 function TeamPage() {
 
