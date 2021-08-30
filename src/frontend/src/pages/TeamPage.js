@@ -63,7 +63,7 @@ function TeamPage() {
             })} 
 
             <div className="more-link">
-                <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}> More > </Link> 
+                <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}> More &gt;&gt; </Link> 
             </div>
             
         </div>
