@@ -28,9 +28,14 @@ public class TeamController {
     public Team getTeam(@PathVariable String teamName) {
         Team team = teamRepository.findByTeamName(teamName);
 
-        team.setMatches(matchRepository.findLatestMatchesByTeam(teamName,5));
+        team.setMatches(matchRepository.findLatestMatchesByTeam(teamName,4));
 
         return team;
+    }
+
+    @GetMapping("/team")
+    public Iterable<Team> getTeam(){
+        return teamRepository.findAll();
     }
 
     @GetMapping("/team/{teamName}/matches")
