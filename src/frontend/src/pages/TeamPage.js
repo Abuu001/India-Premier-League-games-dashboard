@@ -44,7 +44,7 @@ function TeamPage() {
                         { title: 'Wins', value: team.totalWins, color: '#099e4f' },
                         { title: 'Losses', value: team.totalMatches-team.totalWins , color: 'rgb(236, 44, 44)' }
                     ]}
-                    animate={true}
+                     animate={true}
                     lineWidth="100" 
                     label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                     />
