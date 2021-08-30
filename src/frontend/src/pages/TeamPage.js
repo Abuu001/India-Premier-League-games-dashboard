@@ -60,7 +60,7 @@ function TeamPage() {
                 return( 
                         <MatchSmallCard  key={matches.id} teamName={team.teamName}   match={match} />
                 )
-            })}
+            })} 
 
             <div className="more-link">
                 <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}> More > </Link> 
@@ -69,6 +69,6 @@ function TeamPage() {
         </div>
     )
 }
-
+ 
 export default TeamPage
  
