@@ -1,0 +1,22 @@
+.year-selector{
+
+    text-align: right;
+   
+
+    .years-list{
+        list-style: none;
+
+        li{
+                padding-top: 4px;
+               padding-bottom: 8px; 
+        }
+
+        #years-color{
+            color: orange;
+            font-weight: 900;
+            &:hover{
+                color: aquamarine;
+            }
+        }
+    }
+}
