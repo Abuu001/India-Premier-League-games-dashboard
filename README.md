@@ -1,3 +1,4 @@
+![Screenshot from 2021-08-30 23-07-16](https://user-images.githubusercontent.com/60538317/131398698-399fefbc-406c-42e0-b8f0-072830f99001.png)
 # India-Premier-League-games-dashboard
 
 This project is built using :
