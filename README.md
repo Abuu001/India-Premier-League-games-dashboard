@@ -1,5 +1,7 @@
 # India-Premier-League-games-dashboard
 
+Here is the link for the deployes app --> https://ipl-games-dashboard.herokuapp.com/#/
+
 This project is built using :
 
 i) Frontend - React Js
