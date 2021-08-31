@@ -1,6 +1,6 @@
 # India-Premier-League-games-dashboard
 
-Here is the link for the deployes app --> https://ipl-games-dashboard.herokuapp.com/#/
+Here is the link for the  app --> https://ipl-games-dashboard.herokuapp.com/#/
 
 This project is built using :
 
@@ -25,3 +25,5 @@ Browse your favorite India Premier League teams and access their past games deta
 ![Screenshot from 2021-08-30 23-00-36](https://user-images.githubusercontent.com/60538317/131398512-c77fc8b1-5b8c-46c3-835b-79d7f41ad37f.png)
 ![Screenshot from 2021-08-30 23-04-26](https://user-images.githubusercontent.com/60538317/131398524-233632d9-d574-4b31-9f05-05ba2047d123.png)
 ![Screenshot from 2021-08-30 23-07-16](https://user-images.githubusercontent.com/60538317/131398698-399fefbc-406c-42e0-b8f0-072830f99001.png)
+
+https://ipl-games-dashboard.herokuapp.com/#/ <<-- link for the app
